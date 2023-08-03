@@ -24,7 +24,8 @@
 
     <!-- Font Awosome -->
     <script src="https://kit.fontawesome.com/010e5e5c0b.js" crossorigin="anonymous"></script>
-
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@@{TYPEIT_VERSION}/dist/index.umd.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -32,6 +33,8 @@
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
+    <script type="module" src="src/type.js" defer></script>
+
 </head> 
 
 <body>  
@@ -43,12 +46,12 @@
         </div>
         <nav class="header__nav">
             <ul class="header__menu">
-                <li><a class="header__menu__item active" href="#home">Home</a></li>
-                <li><a class="header__menu__item" href="#about">About</a></li>
-                <li><a class="header__menu__item" href="#skills">Skills</a></li>
-                <li><a class="header__menu__item" href="#work">My work</a></li>
-                <li><a class="header__menu__item" href="#testimonials">Testimonials</a></li>
-                <li><a class="header__menu__item" href="#contact">Contact</a></li>
+                <li><a class="header__menu__item active" href="#home">안녕!</a></li>
+                <li><a class="header__menu__item" href="#about">가치관</a></li>
+                <li><a class="header__menu__item" href="#skills">능력치</a></li>
+                <li><a class="header__menu__item" href="#work">독서목록</a></li>
+                <li><a class="header__menu__item" href="#testimonials">멘토들</a></li>
+                <li><a class="header__menu__item" href="#contact">연락처</a></li>
             </ul>
         </nav>
         <button class="header__toggle" aria-label="navigation menu toggle">
@@ -61,35 +64,41 @@
         <section id="home">
             <div class="home__container">
                 <img class="home__avartar" src="image/profile.png" alt="Rio's profile">
-                <h2 class="home__title">Hello <br /> I&#39;m a <strong class="home__title--strong">genius programmer</strong>, Rio </h2>
-                <p class="home__discription">A web developer currently residing in Gwangju, South Korea </p>
-                <a class="home__contact" href="#contact">Contact Me</a> 
+                <h2 class="home__title">안녕?<br /> 나는...<strong class="home__title--strong">마찬옥</strong>이다! </h2>
+                <p class="home__discription">Q. 이 사이트는 뭐예요? <br />A. 뉴진스의 하입보이요.</p>
+                <a class="home__contact" href="#contact">이거 누르면 큰.일.남.</a> 
              </div>
+             <div class="home__divider">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
         </section>
 
 
         <!-- About -->
         <section id="about" class="section max-container">
-            <h2 class="title">About me</h2>
-            <p class="discription">오늘보다 내일이 더 기대되는 웹개발자</p>
+            <h2 class="title">나는 말이야...</h2>
+            <p class="discription">아래 3가지를 중요시하게 여긴다?</p>
             <ul class="majors">
                 <li class="major">
-                    <i class="fa-brands fa-html5 major__icon" ></i>
-                    <p class="major__title">Front-end</p>
-                    <p>HTML, CSS, JavaScript, Writing, Reading</p>
+                    <i class="fa-solid fa-dumbbell major__icon"></i>
+                    <p class="major__title">건강 & 운동</p>
+                    <p>클린식, 맨몸운동, 명상, 좋은 수면, 간헐적 단식, 햇빛 쬐기를 매일 하는 중이야!</p>
                 </li>
                 <li class="major">
-                    <i class="fa-solid fa-mobile major__icon" ></i>
-                    <p class="major__title">공부 예정</p>
-                    <p>Mobile, Ios, Android,Front-end, marketing</p>
+                    <i class="fa-solid fa-house-laptop major__icon"></i>
+                    <p class="major__title">일 & 배움</p>
+                    <p>나는 일하는 게 좋아, 그리고 배움과 성장을 중요시 생각해!</p>
                 </li>
                 <li class="major">
-                    <i class="fa-solid fa-server major__icon" ></i>
-                    <p class="major__title">Back-end</p>
-                    <p>Java, JavaScript, React, Python, Editing</p>
+                    <i class="fa-solid fa-heart major__icon"></i>
+                    <p class="major__title">관계</p>
+                    <p>나는 내 가족을 정말 사랑하고, 넓고 다양한 관계도 좋지만 깊은 관계들을 더 많이 추구하는 것 같아!</p>
                 </li>
             </ul>
-            <ul class="jobs">
+            
+            <!-- <ul class="jobs">
                 <li class="job">
                     <img src="image/jobs/google.png" alt="google logo">
                 <div>
@@ -104,22 +113,24 @@
                     <p class="job__period">2014 Sept - 2019 Oct</p>
                 </div>
                 </li>
-            </ul>
+            </ul> -->
+            
         </section>
-
+       
+        
         <!-- Skill -->
         <section id="skills" class="section">
             <div class="max-container"> 
-                <H2 class="title">My Skills</H2>
-                 <p class="discription">Skills & Attributes</p>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, blanditiis tempore debitis magnam et harum sed qui, facere saepe ad ullam delectus voluptate cupiditate doloremque! Laboriosam explicabo dolores beatae molestiae.</p>
+                <H2 class="title">🚀한 눈에 보는 <strong class="home__title--strong">능력치</strong></H2>
+                 <p class="discription"></p>
+                 <p>아래는 내가 가진 역량과 스킬 & 어학 능력에 대해 궁금하니?</p>
             <div class="skills">
             <section class="skills__coding">
-                <h3 class="skill__title">Coding Skills</h3>
+                <h3 class="skill__title">능력치 분배</h3>
                 <ul>
                     <li class="bar">
                         <div class="bar__metadata">
-                            <span>HTML</span>98%
+                            <span>정신력</span>98%
                         </div>
                         <div class="bar__bg">
                             <div class="bar__value" style="width: 98%"></div>
@@ -127,7 +138,7 @@
                     </li>
                     <li class="bar">
                         <div class="bar__metadata">
-                            <span>JavaScript</span>90%
+                            <span>성장가능성</span>90%
                         </div>
                         <div class="bar__bg">
                             <div class="bar__value"style="width: 90%"></div>
@@ -135,7 +146,7 @@
                     </li>
                     <li class="bar">
                         <div class="bar__metadata">
-                            <span>TypeScript</span>80%
+                            <span>체력</span>80%
                         </div>
                         <div class="bar__bg">
                             <div class="bar__value" style="width: 80%"></div>
@@ -143,14 +154,14 @@
                     </li>
                     </li>
                     <li class="bar">
-                        <div class="bar__metadata"><span>React</span>79%</div>
+                        <div class="bar__metadata"><span>지능</span>79%</div>
                         <div class="bar__bg">
                             <div class="bar__value" style="width: 79%"></div>
                         </div>
                     </li>
                     <li class="bar">                            
                         <div class="bar__metadata">
-                            <span>Node Js</span>68%
+                            <span>민첩</span>68%
                         </div>
                         <div class="bar__bg">
                             <div class="bar__value" style="width: 68%"> </div>
@@ -159,21 +170,21 @@
                     </ul>
                 </section>
                 <section class="skills__tools">
-                    <h3 class="skill__title">Tools</h3>
-                    <ul>
-                        <li>Visual Studio Code</li>
-                        <li>IntelliJ</li>
-                        <li>Android Studio Code</li>
-                        <li>iOS development tools</li>
-                        <li>Sketch app</li>
+                    <h3 class="skill__title">스킬</h3>
+                    <ul class="skills__tool">
+                        <li>영상편집</li>
+                        <li>마케팅</li>
+                        <li>글쓰기</li>
+                        <li>프로그래밍</li>
+                        <li>블로그</li>
                     </ul>
                 </section>
                 <section class="skills__etc">
-                    <h3 class="skill__title">Etc</h3>
+                    <h3 class="skill__title">어학능력</h3>
                     <ul>
-                        <li>Git</li>
-                        <li>Scrum Master</li>
-                        <li>Math</li>
+                        <li>영어 : 상</li>
+                        <li>중국어 : 중</li>
+                        <li>한국어 : 하</li>
                     </ul>
                 </section>
             </div>
@@ -183,84 +194,84 @@
         <!-- Work -->
         <section id="work" class="section">
           <div class="max-container">
-            <h2 class="title">My work</h2>
-            <p class="discription">Projects</p>
+            <h2 class="title">📚내가 <strong class="home__title--strong">좋아하는 책</strong>들</h2>
+            <p >💡아래 책들은 나의 생각과 가치관에 많은 영향을 준 책들이야</p>
             <ul class="categories">
-                <li><button class="category category--selected" data-category="all">All<span class="category__count">8</span></button></li>
-                <li><button class="category" data-category="front-end">Front-end<span class="category__count">3</span></button></li>
-                <li><button class="category" data-category="back-end">Back-end<span class="category__count">3</span></button></li>
-                <li><button class="category" data-category="mobile">Mobile<span class="category__count">2</span></button></li>
+                <li><button class="category category--selected" data-category="all">ALL<span class="category__count">8</span></button></li>
+                <li><button class="category" data-category="front-end">자기계발<span class="category__count">4</span></button></li>
+                <li><button class="category" data-category="back-end">경제관념<span class="category__count">2</span></button></li>
+                <li><button class="category" data-category="mobile">인문서적<span class="category__count">2</span></button></li>
           </ul>
           <ul class="projects">
              <li class="project" data-category="front-end">
                 <a href="#" target="_blank">
-                <img src="image/projects/project1.webp" alt="project1" class="project__img">
+                <img src="image/Book/Book1.webp" alt="project1" class="project__img">
                 <div class="project__metadata">
-                    <h3 class="project__title">Project #1</h3>
-                    <p>Clone Coding with HTML, CSS</p>
+                    <h3 class="project__title">사이코사이버네틱스</h3>
+                    <p>저자 | Maxwell Maltz</p>
                 </div>
                </a>
             </li>
              <li class="project" data-category="front-end">
                 <a href="#" target="_blank">
-                <img src="image/projects/project2.webp" alt="project2" class="project__img">
+                <img src="image/Book/Book2.webp" alt="project2" class="project__img">
                 <div class="project__metadata">
-                    <h3 class="project__title">Project #2</h3>
-                    <p>Clone Coding with HTML, CSS</p>
+                    <h3 class="project__title">The Way of Superior man</h3>
+                    <p>저자 | David Deida</p>
                 </div>
                 </a>
+            </li>
+             <li class="project" data-category="mobile">
+                <a href="#" target="_blank">
+                <img src="image/Book/Book3.webp" alt="project3" class="project__img">
+                <div class="project__metadata">
+                    <h3 class="project__title">의식혁명</h3>
+                    <p>저자 | 데이비드 호킨드</p>
+                </div>
+                </a>
+            </li>
+             <li class="project" data-category="back-end">
+                <a href="#" target="_blank">
+                <img src="image/Book/Book4.webp" alt="project4" class="project__img">
+                <div class="project__metadata">
+                    <h3 class="project__title">부자아빠, 가난한 아빠</h3>
+                    <p>저자 | 로버트 기요사키</p>
+                </div>
+                 </a>
             </li>
              <li class="project" data-category="front-end">
                 <a href="#" target="_blank">
-                <img src="image/projects/project3.webp" alt="project3" class="project__img">
+                <img src="image/Book/Book5.webp" alt="project5" class="project__img">
                 <div class="project__metadata">
-                    <h3 class="project__title">Project #3</h3>
-                    <p>Clone Coding with HTML, CSS</p>
-                </div>
-                </a>
-            </li>
-             <li class="project" data-category="back-end">
-                <a href="#" target="_blank">
-                <img src="image/projects/project4.webp" alt="project4" class="project__img">
-                <div class="project__metadata">
-                    <h3 class="project__title">Project #4</h3>
-                    <p>Clone Coding with HTML, CSS</p>
+                    <h3 class="project__title">놓아버림</h3>
+                    <p>저자 | 데이비드 호킨드</p>
                 </div>
                  </a>
             </li>
-             <li class="project" data-category="back-end">
+             <li class="project" data-category="front-end">
                 <a href="#" target="_blank">
-                <img src="image/projects/project5.webp" alt="project5" class="project__img">
+                <img src="image/Book/Book6.webp" alt="project6" class="project__img">
                 <div class="project__metadata">
-                    <h3 class="project__title">Project #5</h3>
-                    <p>Clone Coding with HTML, CSS</p>
-                </div>
-                 </a>
-            </li>
-             <li class="project" data-category="back-end">
-                <a href="#" target="_blank">
-                <img src="image/projects/project6.webp" alt="project6" class="project__img">
-                <div class="project__metadata">
-                    <h3 class="project__title">Project #6</h3>
-                    <p>Clone Coding with HTML, CSS</p>
+                    <h3 class="project__title">타이탄의 도구들</h3>
+                    <p>저자 | 팀 페리스</p>
                 </div>
                  </a>
              </li>
-             <li class="project" data-category="mobile">
+             <li class="project" data-category="back-end">
                 <a href="#" target="_blank">
-                <img src="image/projects/project7.webp" alt="project7" class="project__img">
+                <img src="image/Book/Book7.webp" alt="project7" class="project__img">
                 <div class="project__metadata">
-                    <h3 class="project__title">Project #7</h3>
-                    <p>Clone Coding with HTML, CSS</p>
+                    <h3 class="project__title">부의 추월차선</h3>
+                    <p>저자 | M. J. 더마코</p>
                 </div>
                 </a>
             </li>
              <li class="project" data-category="mobile">
                 <a href="#" target="_blank">
-                <img src="image/projects/project8.webp" alt="project8" class="project__img">
+                <img src="image/Book/Book8.webp" alt="project8" class="project__img">
                 <div class="project__metadata">
-                    <h3 class="project__title">Project #8</h3>
-                    <p>Clone Coding with HTML, CSS</p>
+                    <h3 class="project__title">명상록</h3>
+                    <p>저자 | 마르쿠스 아우렐리우스</p>
                 </div>
                 </a>
             </li>
@@ -270,34 +281,34 @@
 
         <!-- Testimonials -->
         <section id="testimonials" class="section">
-            <h2 class="title">Testimonials</h2>
-            <p class="discription">See What they say about me</p>
+            <h2 class="title">🔥나의 멘토들</h2>
+            <p class="discription"></p>
             <ul class="testimonials">
                 <li class="testimonial">
-                    <img src="image/testimonials/people1.webp" alt="people1" class="testimonial__img">
+                    <img src="image/Mentor/peo1.webp" alt="people1" class="testimonial__img">
                     <div class="testimonial__bubble">
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae facere sunt, ea ducimus minus tenetur sapiente aliquam nesciunt perspiciatis quis sint, maiores qui quos. Autem eos quia officia ipsa! Illo.
+                        시간은 결국 지나가게 되어있다. 그러니 마땅히 해야할 일들을 해. 규율이 곧 자유야. 루틴을 가져. 클린하게 먹고 운동하고 질 좋은 수면에 투자해. 너의 인생에 집중해.
                     </p>
-                    <p><a href="#" class="testimonial__bubble__name">Jame Kim</a> / Google</p>
+                    <p><a href="#" class="testimonial__bubble__name">Hamza</a> / 200만 자기계발 유튜버</p>
                 </div>
                 </li>
                 <li class="testimonial">
-                    <img src="image/testimonials/people2.webp" alt="people2" class="testimonial__img">
+                    <img src="image/Mentor/peo2.webp" alt="people2" class="testimonial__img">
                     <div class="testimonial__bubble">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aperiam, neque provident incidunt, itaque quae laudantium est numquam, esse corrupti modi dicta. Vero dicta accusantium voluptates aliquid illum rem repellendus.
+                            진정한 호기심을 따라, 그리고 그 과정에서 배운 것들을 사회에 나눠. 미디어와 코딩은 그 나눔의 가치들을 무제한으로 복제가능하게 만들어줬어. 이제는 레버지리 vs 비-레버리지 시대거든. 
                         </p>
-                        <p><a href="#" class="testimonial__bubble__name">Anna Jin</a> /Samsung</p>
+                        <p><a href="#" class="testimonial__bubble__name">Naval</a> / 엔젤투자자</p>
                     </div>
                 </li>
                 <li class="testimonial">
-                    <img src="image/testimonials/people3.webp" alt="people3" class="testimonial__img">
+                    <img src="image/Mentor/peo3.webp" alt="people3" class="testimonial__img">
                     <div class="testimonial__bubble">
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, reiciendis laboriosam deserunt soluta qui sint repudiandae velit? Sint at asperiores suscipit possimus iste adipisci molestias odio, veniam necessitatibus est corrupti.
+                            나는 나에게 지금 주어진 것만으로도 내 인생을 최고로 만들 수 있는 지혜가 있다. 나는 늘 성장하고 있다. 내 인생은 재미있고 기쁨으로 가득하다. 나는 오늘도 내가 원하는 모든 선한 일들을 이룰 것이다.
                         </p>
-                        <p><a href="#" class="testimonial__bubble__name">Anna Jin</a> /Samsung</p>
+                        <p><a href="#" class="testimonial__bubble__name">캘리최</a> / 기업가</p>
                     </div>
                 </li>
             </ul>
@@ -314,23 +325,23 @@
     <!-- Footer -->
     <footer id="contact"class="section">
      <div class="max-container">
-        <h2 class="title">Let&#39;s talk</h2>
+        <h2 class="title">여친 구함⬇️</h2>
         <p class="discription">qnqnwnr9632@naver.com</p>
         <ul class="contact__links">
             <li>
             <a class="contact__link" 
-                href="http://github.com/dream-ellie" 
+                href="https://www.instagram.com/horse_cano/" 
                 target="_blank"
-                title="my github link">
-                <i class="fa-brands fa-github"></i>
+                title="my insta link">
+                <i class="fa-brands fa-instagram"></i>
             </a>
             </li>
             <li>
             <a class="contact__link" 
-                href="http://github.com/dream-ellie" 
+                href="https://blog.naver.com/qnqnwnr9632" 
                 target="_blank"
-                title="my linkedin link">
-                <i class="fa-brands fa-linkedin"></i>
+                title="my blog link">
+                <i class="fa-brands fa-blogger-b"></i>
             </a>
             </li>
         </ul>

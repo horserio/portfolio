@@ -136,11 +136,33 @@ button:focus {
 
 /* Home */
 #home {
+    position: relative;
     background-color: var(--color-primary);
     color: var(--color-text);
     padding: 5rem 1rem;
     padding-top: 7rem;
     text-align: center;
+}
+    
+.home__divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.home__divider svg {
+    position: relative;
+    display: block;
+    width: calc(140% + 1.3px);
+    height: 83px;
+}
+
+.home__divider .shape-fill {
+    fill: #FFFFFF;
 }
 
 .home__avartar {
@@ -238,9 +260,31 @@ button:focus {
 
 /* Skills */
 #skills {
+    position: relative;
         background-color: var(--color-primary-variant);
         color: var(--color-text);
  }
+
+ .custom-shape-divider-bottom-1691063140 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1691063140 svg {
+    position: relative;
+    display: block;
+    width: calc(171% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1691063140 .shape-fill {
+    fill: #FFFFFF;
+}
 
  .skills {
     display: grid;
@@ -360,7 +404,8 @@ button:focus {
     position: relative;
     border-radius: 8px;
     overflow: hidden;
-
+    height: 13rem;
+    
  }
 
  .projects.anim-out {
